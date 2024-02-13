@@ -42,7 +42,6 @@ async function readUsersWithAsync(){
     const request = await fetch(urlUser);
     const responseUser = await request.json();
 
-    console.log(responseUser);
 
     divResponses.innerHTML = '';
 
@@ -82,7 +81,6 @@ async function readPostAsyncFunction(){
 }
 
 function printResponse(responses){
-    console.log(divResponses);
     divResponses.innerHTML ='<p>vacio</p>';
     printItem = "";
 
